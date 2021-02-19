@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Flowers and petals</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <h1> "plants by Vivek Drakshapally"</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2">D</div>
+            <div class="col-sm-2">R</div>
+            <div class="col-sm-2">A</div>
+            <div class="col-sm-2">K</div>
+            <div class="col-sm-2">S</div>
+            <div class="col-sm-2">H</div>
+        </div>
+        <div class="row">
+            <div class="col-md">Daffodil</div>
+            <div class="col-md">Rose</div>
+            <div class="col-md">Alyssum</div>
+            <div class="col-md">Kalmia</div>
+            <div class="col-md">Scilla</div>
+            <div class="col-md">Hibiscus</div>
+        </div>
+    </div>
+    <p>
+       After observing the outcome of the above code. Whenever I start decreasing the size of the page I came to know that the Plants row is
+       breaking first because we have used col-md for the palnts row. col-md means column medium. If we use col-md the columns will become
+       horizontal when the width is >= 768px. If we use col-sm(column small)the columns will become horizontal when the width is >= 576px
+       we have used col-sm for the Letters row. So when we start decreasing the size of the page when the page size reaches 768px the plants
+       row will convert into vertical then after continuing the decresing process again when the size reaches 576px the Letters
+       row will convert into vertical. SO this is the reason why the plants row will first converst into vertical.
+    </p>
+
+</body>
+
+</html>
