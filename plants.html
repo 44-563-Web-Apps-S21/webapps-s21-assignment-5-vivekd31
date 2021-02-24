@@ -11,20 +11,20 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <style>
         table {
-    font-size: 15px;
-    color: black;
-    }
+            font-size: 15px;
+            color: black;
+        }
 
-    tr {
-    font-size: 18px;
-    color: black;
-    background-color: rgb(100, 237, 141);
-    }
+        tr {
+            font-size: 18px;
+            color: black;
+            background-color: rgb(100, 237, 141);
+        }
 
-    td {
-    background-color: darkblue;
-    color: rgb(245, 245, 245);
-    }
+        td {
+            background-color: darkblue;
+            color: rgb(245, 245, 245);
+        }
     </style>
 </head>
 
@@ -50,73 +50,91 @@
         </div>
     </div>
     <p>
-       After observing the outcome of the above code. Whenever I start decreasing the size of the page I came to know that the Plants row is
-       breaking first because we have used col-md for the palnts row. col-md means column medium. If we use col-md the columns will become
-       horizontal when the width is >= 768px. If we use col-sm(column small)the columns will become horizontal when the width is >= 576px
-       we have used col-sm for the Letters row. So when we start decreasing the size of the page when the page size reaches 768px the plants
-       row will convert into vertical then after continuing the decresing process again when the size reaches 576px the Letters
-       row will convert into vertical. SO this is the reason why the plants row will first converst into vertical.
+        After observing the outcome of the above code. Whenever I start decreasing the size of the page I came to know
+        that the Plants row is
+        breaking first because we have used col-md for the palnts row. col-md means column medium. If we use col-md the
+        columns will become
+        horizontal when the width is >= 768px. If we use col-sm(column small)the columns will become horizontal when the
+        width is >= 576px
+        we have used col-sm for the Letters row. So when we start decreasing the size of the page when the page size
+        reaches 768px the plants
+        row will convert into vertical then after continuing the decresing process again when the size reaches 576px the
+        Letters
+        row will convert into vertical. SO this is the reason why the plants row will first converst into vertical.
     </p>
     <div class="container">
         <img src="rose.jpeg" class="img-fluid" width="400px" height="400px">
         <img src="hibiscus.jpg" class="img-fluid" width="400px" height="400px">
         <img src="daffodil.jpg" class="img-fluid" width="400px" height="400px">
-    </div> 
+    </div>
     <div class="container">
         <img src="rose.jpeg" class="img-thumbnail" width="150px">
         <img src="hibiscus.jpg" class="img-thumbnail" width="150px">
         <img src="daffodil.jpg" class="img-thumbnail" width="150px">
     </div>
     <table class="table">
-        <caption>Above Mentioned table contains information about 6letters related plants,cities and foods</caption> 
+        <caption>Above Mentioned table contains information about 6letters related plants,cities and foods</caption>
         <thead>
-          <tr>
-            <th scope="col">Letter</th>
-            <th scope="col">Plant</th>
-            <th scope="col">City</th>
-            <th scope="col">Food</th>
-          </tr>
+            <tr>
+                <th scope="col">Letter</th>
+                <th scope="col">Plant</th>
+                <th scope="col">City</th>
+                <th scope="col">Food</th>
+            </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row">D</th>
-            <td>Daffodil</td>
-            <td>Delhi</td>
-            <td>Daltadka</td>
-          </tr>
-          <tr>
-            <th scope="row">R</th>
-            <td>Rose</td>
-            <td>Rome</td>
-            <td>Rumali roti</td>
-          </tr>
-          <tr>
-            <th scope="row">A</th>
-            <td>Acacia</td>
-            <td>Ahmedabad</td>
-            <td>Almonds</td>
-          </tr>
-          <tr>
-            <th scope="row">K</th>
-            <td>Kalmia Spoonwood</td>
-            <td>Kolkata</td>
-            <td>Keema</td>
-          </tr>
-          <tr>
-            <th scope="row">S</th>
-            <td>Sunflower</td>
-            <td>San francisco</td>
-            <td>Samosa</td>
-          </tr>
-          <tr>
-            <th scope="row">H</th>
-            <td>Hibiscus</td>
-            <td>Hyderabad</td>
-            <td>Haleem</td>
-          </tr>
+            <tr>
+                <th scope="row">D</th>
+                <td>Daffodil</td>
+                <td>Delhi</td>
+                <td>Daltadka</td>
+            </tr>
+            <tr>
+                <th scope="row">R</th>
+                <td>Rose</td>
+                <td>Rome</td>
+                <td>Rumali roti</td>
+            </tr>
+            <tr>
+                <th scope="row">A</th>
+                <td>Acacia</td>
+                <td>Ahmedabad</td>
+                <td>Almonds</td>
+            </tr>
+            <tr>
+                <th scope="row">K</th>
+                <td>Kalmia Spoonwood</td>
+                <td>Kolkata</td>
+                <td>Keema</td>
+            </tr>
+            <tr>
+                <th scope="row">S</th>
+                <td>Sunflower</td>
+                <td>San francisco</td>
+                <td>Samosa</td>
+            </tr>
+            <tr>
+                <th scope="row">H</th>
+                <td>Hibiscus</td>
+                <td>Hyderabad</td>
+                <td>Haleem</td>
+            </tr>
         </tbody>
-      </table>
-
+    </table>
+    <div class="btn-toolbar" aria-label="Letter Button Gropus">
+    <div class="btn-group mr-2" aria-label="This is the First Button Group">
+        <button class="btn btn-success">D</button>
+        <button class="btn btn-success">R</button>
+        <button class="btn btn-success">A</button>
+    </div>
+    <div class="btn-group mr-2" aria-label="This is the Second Button Group">
+        <button class="btn btn-warning">K</button>
+        <button class="btn btn-warning">S</button>
+     </div>
+    <div class="btn-group mr-2" aria-label="This is the Third Button Group">
+        <button class="btn btn-danger">H</button>
+    </div>
+    </div>
 </body>
 
 </html>
